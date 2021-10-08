@@ -1,0 +1,250 @@
+html{
+  font-size: 62%;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20rem;
+  background-color:skyblue;
+  flex-direction: column;
+}
+.stand{
+  height: 45rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  background-color: goldenrod;
+  border-radius: 100% 100% 0 0;
+
+}
+
+.point{
+  margin-top: 5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+
+}
+
+.fanblade{
+  height: 20rem;
+  width: 3rem;
+  background-color: white;
+  border-radius: 200%;
+  border: 1px solid pink;
+  position: absolute;
+  transform-origin: top;
+  display: flex;
+  justify-content: center;
+
+}
+
+.center{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  z-index: 5;
+  position: absolute;
+  background-color: gainsboro;
+  align-self:center;
+}
+
+.connected{
+  height: 3rem;
+  width: 1rem;
+  background-color: black;
+  margin-top: -2rem;
+  border-radius: 25px;
+  border: 2px solid white;
+  display: none;
+}
+
+.fb1{
+  transform: rotate(120deg) translateY(2rem) ;
+  transform-style: preserve-3d;
+}
+.fb2{
+  transform: rotate(240deg) translateY(2rem);
+}
+.fb3{
+  transform: rotate(360deg) translateY(2rem);
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }25%{
+    transform: rotate(90deg); 
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.base{
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(165, 42, 42);
+
+}
+
+.slider{
+  background-color: chartreuse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem; 
+}
+
+#sliderrange{
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 50rem; 
+
+  background: white; 
+  border-radius: 25px;
+}
+
+#sliderrange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 4rem; 
+  height: 4rem; 
+  background: #04AA6D; 
+  cursor: pointer; 
+  border-radius: 40%;
+}
+
+#sliderrange::-moz-range-thumb {
+  width: 4rem; 
+  height: 4rem; 
+  background: #04AA6D; 
+  cursor: pointer; 
+  border-radius: 40%;
+}
+
+.footer{
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  padding: 0.3rem;
+}
+
+.header{
+  font-weight: 700;
+  text-align: center;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  padding: 1rem;
+}
+label{ 
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 56.25rem) {
+  html{
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 37.5rem) {
+  html{
+    font-size: 40%;
+  }
+  #sliderrange{
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 30rem; 
+  
+    background: white; 
+    border-radius: 25px;
+  }
+  label{ 
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 21rem) {
+  html{
+    font-size: 30%;
+  }
+  #sliderrange{
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 30rem; 
+  
+    background: white; 
+    border-radius: 25px;
+  }
+  label{ 
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 15.6rem) {
+  html{
+    font-size: 20%;
+  }
+  #sliderrange{
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 30rem; 
+  
+    background: white; 
+    border-radius: 25px;
+  }
+  label{ 
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 12rem) {
+  html{
+    font-size: 15%;
+  }
+  #sliderrange{
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 30rem; 
+  
+    background: white; 
+    border-radius: 25px;
+  }
+  label{ 
+    font-size: 2rem;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
