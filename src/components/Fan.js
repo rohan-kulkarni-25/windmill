@@ -6,6 +6,7 @@ export default function Fan() {
   const [speed, setspeed] = useState(50)
 
   const speedChange = () => {
+    console.log(speed)
     const value = document.getElementById('sliderrange').value;
     setspeed(value);
     let ms = value / 100;
